@@ -17,4 +17,14 @@ public static ArrayList<Integer> combine(ArrayList<Integer> l1, ArrayList<Intege
 			System.out.print(listy.get(i)+",");
 		return listy;
 	}
+	public static ArrayList<Integer> removeDuplicates(ArrayList<Integer> listx){
+		for(int i = listx.size()-1;i <= 0;i--){
+			for(int j = i-1; j <=0; j--){
+				if(listx.get(i)==listx.get(j))
+					listx.remove(i);
+			}
+		}
+		return listx;
+	}
+
 }
