@@ -12,4 +12,9 @@ public static ArrayList<Integer> combine(ArrayList<Integer> l1, ArrayList<Intege
 		list.add(l2.get(i));
 	return list;
 	}
+	public static ArrayList<Integer> print(ArrayList<Integer> listy){
+		for(int i = 0;i<listy.size();i++)
+			System.out.print(listy.get(i)+",");
+		return listy;
+	}
 }
